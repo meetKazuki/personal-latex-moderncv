@@ -1,0 +1,8 @@
+*.pdf 
+*.jpg 
+*.zip 
+*.docx 
+*.gz
+roddy_cv/
+wilson_cv/
+package.json
