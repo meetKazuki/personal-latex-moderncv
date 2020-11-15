@@ -1,37 +1,66 @@
 \documentclass[12pt, a4paper, sans]{moderncv}
+
 \moderncvstyle{classic}
 \moderncvcolor{blue}
-\usepackage[utf8]{inputenc}
-\usepackage[scale=0.8]{geometry}      % Width of the entire CV
-\setlength{\hintscolumnwidth}{4.1cm}  % Width of the timeline on your left
-\usepackage{pdfpages}
-\usepackage{moderntimeline}
-\usepackage{xpatch}
-\usepackage{color, graphicx}
-\tlmaxdates{2009}{2020}               % Beginning and start of your timeline
 
+\usepackage{color, graphicx}
+\usepackage[scale=0.85]{geometry}         % Width of the entire CV
+\setlength{\hintscolumnwidth}{3.5cm}      % Width of the timeline on your left
+\usepackage[utf8]{inputenc}
+\usepackage{moderntimeline}
+\usepackage{pdfpages}
+\usepackage{xpatch}
+
+\tlmaxdates{2009}{2021}                   % Beginning and start of your timeline
 
 % Personal Information
-\name{Desmond}{Sylvester}
+
+\name{Desmond}{Edem}
 \title{Software Developer}
-\address{No 12 McNeil Street}{Sabo-Yaba, Lagos}
+\address{No 12B McNeil Street}{Sabo-Yaba, Lagos}
 \phone[mobile]{+234~(806)~749~0432}
 \email{meetdesmond.edem@gmail.com}
-\social[twitter]{meetKazuk1}
 \social[linkedin]{desmondedem}
 \social[github]{meetkazuki}
+\social[twitter]{meetKazuk1}
 \quote{Learn. Improve. Contribute\ldots}
-
 
 \begin{document}
 
 \makecvtitle
 
+% Work Information
+
 \section{Work Experience}
 
 \medskip
 
-\tlcventry{2019}{0}{Backend Developer}{DevCareers}{}{Lagos State, Nigeria}{}
+\tlcventry{2020}{0}{Backend Developer}{Pettysave Limited}{Lagos State, Nigeria}{}{}
+
+\medskip
+
+\tlcventry{2020}{0}{Fullstack Developer}{Nester Global Solution Services}{}{Lagos State, Nigeria}{
+  \begin{itemize}
+    \item Responsible for the maintenance, review and development of the firm’s enterprise and web solutions.
+    \item Was involved in application management and monitoring, deployment of some of their solutions on Microsoft Azure and setting up cron jobs.
+  \end{itemize}
+  Language/tools I worked with daily were NodeJS/ExpressJS, VueJS, MongoDB, Amazon SQS\@. The solutions I worked on and maintained are: {\color{blue}{\href{https://www.nesterverify.com/}{NesterVerify}}}, {\color{blue}{\href{https://www.nesterpod.com/}{NesterPOD}}}, and {\color{blue}{\href{https://ecommerce.nesterpod.com/}{NestereCommerce}}}.
+}
+
+\medskip
+
+\tlcventry{2019}{0}{Backend Developer}{DevCareers}{}{Lagos State, Nigeria}{Worked closely with a team of nine developers to build web applications for the organization. My responsibilities during this period was:
+  \begin{itemize}
+    \item Setup the CI/CD pipeline for API development.
+    \item Implementing API endpoints for the Frontend team to work with.
+    \item Writing API documentation to help the Frontend team work easily with the business logic of the application.
+    \item Enforcing code reviews (and other best practices) among my backend teammates.
+  \end{itemize}
+}
+
+\medskip
+
+\tlcventry{2018}{2019}{Software Developer \emph{Intern}}{Andela Nigeria}{}{Lagos State, Nigeria}{I was part of an AGILE team composed of a Product Owner, Project Manager, Technical Team Lead and five engineers tasked with building REST API endpoints for a travel agency web application using NodeJS, Sequelize, and PostgreSQL.}
 
 \medskip
 
@@ -45,7 +74,7 @@
 
 \medskip
 
-\tlcventry{2015}{2014}{IT Technician \textbf{\emph{Intern}}}{AKS Ministry of Science \& Technology}{}{Akwa-Ibom State, Nigeria}{
+\tlcventry{2015}{2014}{IT Technician \emph{Intern}}{AKS Ministry of Science \& Technology}{}{Akwa-Ibom State, Nigeria}{
   \begin{itemize}
     \item Responsible for the installation, configuration, and maintenance of computer/networking facilities in the ministry.
     \item Organized trainings for the staffs.
@@ -58,30 +87,48 @@
 
 \medskip
 
-\tldatecventry{2019}{Barefoot Nomad}{}{}{}{A project during Andela Nigeria StacUp program, Barefoot Nomad makes company global travel and accommodation easy and convenient for the strong workforce of savvy members of staff, by leveraging the modern web}
+\tldatecventry{2020}{Platr.ng}{}{}{}{Platr is an online food ordering and delivery marketplace in Nigerian that connects diners with local Vendors/Restaurants. This allows customers to order food and have it delivered to their doorstep stress-free.}
+
 \medskip
+
+\cvitemwithcomment{tools used}{NodeJS/Express, Cloudinary API, Paystack API, PostgreSQL, Heroku}{}
+
+\medskip
+
+\tldatecventry{2019}{Barefoot Nomad}{}{}{}{A project during Andela Nigeria StackUp program, Barefoot Nomad makes company global travel and accommodation easy and convenient for the strong workforce of savvy members of staff, by leveraging the modern web.}
+
+\medskip
+
 \cvitemwithcomment{tools used}{NodeJS/ExpressJS, SocketIO, Mocha, Chai, Sequelize, PostgreSQL}{}
 \cvitemwithcomment{other outcomes}{Agile methodologies, Clients Engagement, Test-Driven Development, CI/CD}{}
 
-\tldatecventry{2019}{QuickCredit}{}{}{}{A project during Andela Nigeria Cycle 44 Fellowship Bootcamp program, QuickCredit is an online lending platform that provides short term soft loans to individuals}
 \medskip
-\cvitemwithcomment{tools used}{NodeJS/ExpressJS, HTML5/CSS3, Mocha, Chai, API Blueprint, PostgreSQL}{}
+
+\tldatecventry{2019}{QuickCredit}{}{}{}{A project during Andela Nigeria Cycle 44 Fellowship Bootcamp program, QuickCredit is an online lending platform that provides short term soft loans to individuals.}
+
+\medskip
+
+\cvitemwithcomment{tools used}{NodeJS/ExpressJS, HTML5/CSS3 Mocha, Chai, API Blueprint, PostgreSQL}{}
 \cvitemwithcomment{other outcomes}{Agile methodologies, Test-Driven
-Development, CI/CD}{}
+  Development, CI/CD}{}
 
 \bigskip
+
+% Skills Information
 
 \section{Skills}
 
 \medskip
 
-\cvitemwithcomment{programming}{JavaScript, SQL Databases (MySQL, PostgreSQL), HTML5, CSS3, \LaTeX{}}{}
+\cvitemwithcomment{programming}{JavaScript, TypeScript, SQL Databases (MySQL, PostgreSQL), MongoDB, \LaTeX{}}{}
 
-\cvitemwithcomment{tools}{NodeJS/ExpressJS, Git/Github, VSCode, TravisCI, Code Climate, Docker}{}
+\cvitemwithcomment{tools}{NodeJS/ExpressJS, AdonisJS, GraphQL, Git, Docker}{}
 
-\cvitemwithcomment{other tools}{Slack, Pivotal Tracker, Trello}{}
+\cvitemwithcomment{other tools}{Github Projects, Pivotal Tracker, Trello, Github Actions}{}
 
 \bigskip
+
+% Interest and Misc Information
 
 \section{Interests/Hobbies}
 
