@@ -1,120 +1,115 @@
-\documentclass[12pt, a4paper, sans]{moderncv}
+\documentclass[11pt, a4paper, sans]{moderncv}
 
 \moderncvstyle{classic}
 \moderncvcolor{blue}
 
 \usepackage{color, graphicx}
-\usepackage[scale=0.85]{geometry}         % Width of the entire CV
-\setlength{\hintscolumnwidth}{3.5cm}      % Width of the timeline on your left
+\usepackage[scale=0.8]{geometry}              % Width of the entire CV
 \usepackage[utf8]{inputenc}
+\usepackage{lmodern}
 \usepackage{moderntimeline}
 \usepackage{pdfpages}
 \usepackage{xpatch}
 
-\tlmaxdates{2009}{2021}                   % Beginning and start of your timeline
+\recomputelengths
+\setlength{\hintscolumnwidth}{3cm}            % Width of the timeline on your left
+\tlmaxdates{2018}{2023}                       % Beginning and start of your timeline
 
-% Personal Information
+%  //////////////////////////////////////////////////////////////////////
+%  ------------------------ Personal Information ------------------------
+%  //////////////////////////////////////////////////////////////////////
 
 \name{Desmond}{Edem}
-\title{Software Developer}
-\address{No 12B McNeil Street}{Sabo-Yaba, Lagos}
+\title{Backend Engineer}
+\address{No 12B McNeil Road}{Sabo-Yaba, Lagos}
 \phone[mobile]{+234~(806)~749~0432}
 \email{meetdesmond.edem@gmail.com}
 \social[linkedin]{desmondedem}
 \social[github]{meetkazuki}
-\social[twitter]{meetKazuk1}
+\extrainfo{https://meetkazuki.github.io}
 \quote{Learn. Improve. Contribute\ldots}
 
 \begin{document}
 
 \makecvtitle
 
-% Work Information
+%  //////////////////////////////////////////////////////////////////////
+%  -------------------------- Work Information --------------------------
+%  //////////////////////////////////////////////////////////////////////
 
 \section{Work Experience}
 
 \medskip
 
-\tlcventry{2020}{0}{Backend Developer}{Pettysave Limited}{Lagos State, Nigeria}{}{}
-
-\medskip
-
-\tlcventry{2020}{0}{Fullstack Developer}{Nester Global Solution Services}{}{Lagos State, Nigeria}{
+\tlcventry{2021}{0}{Backend Engineer}{STRV s.r.o}{Prague, Czech}{}{
   \begin{itemize}
-    \item Responsible for the maintenance, review and development of the firm’s enterprise and web solutions.
-    \item Was involved in application management and monitoring, deployment of some of their solutions on Microsoft Azure and setting up cron jobs.
+    \item Designed and implemented server-side logic for web applications.
+    \item Built and maintained APIs for external clients and internal services.
+    \item Gathered and validated requirements as a part of a collaboration for web applications that helped develop clear, unambiguous technical requirements and establish consistent feedback loop.
+    \item Integrated with databases and storage systems to persist data.
+    \item Colloborated with the PM to define product roadmaps for timely delivery of projects to clients.
   \end{itemize}
-  Language/tools I worked with daily were NodeJS/ExpressJS, VueJS, MongoDB, Amazon SQS\@. The solutions I worked on and maintained are: {\color{blue}{\href{https://www.nesterverify.com/}{NesterVerify}}}, {\color{blue}{\href{https://www.nesterpod.com/}{NesterPOD}}}, and {\color{blue}{\href{https://ecommerce.nesterpod.com/}{NestereCommerce}}}.
 }
 
 \medskip
 
-\tlcventry{2019}{0}{Backend Developer}{DevCareers}{}{Lagos State, Nigeria}{Worked closely with a team of nine developers to build web applications for the organization. My responsibilities during this period was:
+\cvline{}{Tools: \textit{TypeScript, Node.js, PostgreSQL, MongoDB, Redis, AWS Elastic Beanstalk, Heroku.}}
+
+\bigskip
+
+\tlcventry{2020}{2021}{Backend Developer}{Pettysave Limited}{Lagos State, Nigeria}{}{
   \begin{itemize}
-    \item Setup the CI/CD pipeline for API development.
+    \item Assisted in developing server-based Node.js software by providing inputs and insights.
+    \item Improved peer review process by automating Pull Requests deployment and enhancing work collaboration between different stakeholders.
+    \item Increased customer retention by 27\% by implementing email marketing automations across user journey, using Sendgrid.
+    \item Collaborated together with the product and marketing team to implement product-led growth strategies like in-app reward systems, gamifications and social features.
+  \end{itemize}
+}
+
+\medskip
+
+\cvline{}{Tools: \emph{JavaScript, Node.js, Adonis.js, GraphQL, MySQL, Heroku.}}
+
+\bigskip
+
+\tlcventry{2020}{2020}{Fullstack Developer}{Nester Global Solution Services}{}{Lagos State, Nigeria}{
+  \begin{itemize}
+    \item Maintained, reviewed and developed the firm’s enterprise and web solutions.
+    \item Involved with application management and monitoring.
+    \item Deployed solutions on Microsoft Azure and setting up cron jobs.
+  \end{itemize}
+}
+
+\medskip
+
+\cvline{}{Tools: \textit{JavaScript, Node.js, Vue.js, MongoDB, Microsoft Azure.}}
+
+\bigskip
+
+\tlcventry{2019}{2019}{Backend Developer (Intern)}{DevCareers}{}{Lagos State, Nigeria}{Worked closely with a team of nine developers to build web applications for the organization. My responsibilities during this period was:
+  \begin{itemize}
+    \item Designed and configured a fully automated CI/CD lifecycle resulting in faster development time.
     \item Implementing API endpoints for the Frontend team to work with.
-    \item Writing API documentation to help the Frontend team work easily with the business logic of the application.
-    \item Enforcing code reviews (and other best practices) among my backend teammates.
   \end{itemize}
 }
 
 \medskip
 
-\tlcventry{2018}{2019}{Software Developer \emph{Intern}}{Andela Nigeria}{}{Lagos State, Nigeria}{I was part of an AGILE team composed of a Product Owner, Project Manager, Technical Team Lead and five engineers tasked with building REST API endpoints for a travel agency web application using NodeJS, Sequelize, and PostgreSQL.}
-
-\medskip
-
-\tlcventry{2017}{0}{Social Media Coordinator}{The Dialogue with Agba Jalingo}{}{Cross River State, Nigeria}{
-  \begin{itemize}
-    \item Handled LIVE coverage of the quarterly townhall meetings on social media.
-    \item Responsible for the maintenance of the organization’s computer systems to ensure the smooth running of their day-to-day activities.
-    \item Implemented strategies to drive traffic to their social media accounts.
-  \end{itemize}
-}
-
-\medskip
-
-\tlcventry{2015}{2014}{IT Technician \emph{Intern}}{AKS Ministry of Science \& Technology}{}{Akwa-Ibom State, Nigeria}{
-  \begin{itemize}
-    \item Responsible for the installation, configuration, and maintenance of computer/networking facilities in the ministry.
-    \item Organized trainings for the staffs.
-  \end{itemize}
-}
+\cvline{}{Tools: \textit{JavaScript, Node.js, PostgreSQL, Heroku.}}
 
 \bigskip
 
-\section{Software Projects}
+\tlcventry{2018}{2019}{Software Developer (Intern)}{Andela Nigeria}{}{Lagos State, Nigeria}{I was part of an AGILE team composed of a Product Owner, Project Manager, Technical Team Lead and five engineers tasked with building REST API endpoints for a travel agency web application using NodeJS, Sequelize, and PostgreSQL.}
 
 \medskip
 
-\tldatecventry{2020}{Platr.ng}{}{}{}{Platr is an online food ordering and delivery marketplace in Nigerian that connects diners with local Vendors/Restaurants. This allows customers to order food and have it delivered to their doorstep stress-free.}
-
-\medskip
-
-\cvitemwithcomment{tools used}{NodeJS/Express, Cloudinary API, Paystack API, PostgreSQL, Heroku}{}
-
-\medskip
-
-\tldatecventry{2019}{Barefoot Nomad}{}{}{}{A project during Andela Nigeria StackUp program, Barefoot Nomad makes company global travel and accommodation easy and convenient for the strong workforce of savvy members of staff, by leveraging the modern web.}
-
-\medskip
-
-\cvitemwithcomment{tools used}{NodeJS/ExpressJS, SocketIO, Mocha, Chai, Sequelize, PostgreSQL}{}
-\cvitemwithcomment{other outcomes}{Agile methodologies, Clients Engagement, Test-Driven Development, CI/CD}{}
-
-\medskip
-
-\tldatecventry{2019}{QuickCredit}{}{}{}{A project during Andela Nigeria Cycle 44 Fellowship Bootcamp program, QuickCredit is an online lending platform that provides short term soft loans to individuals.}
-
-\medskip
-
-\cvitemwithcomment{tools used}{NodeJS/ExpressJS, HTML5/CSS3 Mocha, Chai, API Blueprint, PostgreSQL}{}
-\cvitemwithcomment{other outcomes}{Agile methodologies, Test-Driven
-  Development, CI/CD}{}
+\cvline{}{Tools: \textit{JavaScript, Node.js, HTML/CSS, PostgreSQL, Heroku.}}
 
 \bigskip
 
-% Skills Information
+%  //////////////////////////////////////////////////////////////////////
+%  ------------------------ Skills Information --------------------------
+%  //////////////////////////////////////////////////////////////////////
 
 \section{Skills}
 
@@ -124,22 +119,16 @@
 
 \cvitemwithcomment{tools}{NodeJS/ExpressJS, AdonisJS, GraphQL, Git, Docker}{}
 
-\cvitemwithcomment{other tools}{Github Projects, Pivotal Tracker, Trello, Github Actions}{}
-
 \bigskip
 
-% Interest and Misc Information
+\section{Other Professional Experience}
 
-\section{Interests/Hobbies}
+\medskip
 
-\cvitemwithcomment{interest}{eSports, 3D \& CGI, Photography, WebVR}{}
+\tlcventry{2019}{2020}{Programming Tutor}{CodeLagos, Nigeria}{}{}{CodeLagos is an initiative of the Lagos State Ministry of Education aimed at making coding education accessible to Lagos State residents.}
 
-\cvitemwithcomment{hobbies}{Programming, Video games, Typesetting}{}
+\medskip
 
-\bigskip
-
-\section{References}
-
-\emph{Available on request}
+\tlcventry{2022}{0}{Mentor}{DevCareer}{Lagos, Nigeria}{}{DevCareer is a Non-Profit organization that is focused on supporting upcoming developers with resources to excel into world class.}
 
 \end{document}
