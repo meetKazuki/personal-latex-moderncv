@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - chore/setup-actions
 
 jobs:
   build-and-release:
@@ -24,7 +23,7 @@ jobs:
 
       - name: Get Current Date
         id: date
-        run: echo "date=$(date + '%Y-%m-%d')" >> $GITHUB_ENV
+        run: echo "date=$(date +%Y-%m-%d)" >> $GITHUB_ENV
 
       - name: Release
         uses: softprops/action-gh-release@v2
