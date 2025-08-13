@@ -1,0 +1,37 @@
+name: Compile & Release
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Compile LaTeX
+        uses: xu-cheng/latex-action@v4
+        with:
+          root_file: main.tex
+          compiler: pdflatex
+
+      - name: Rename PDF Output
+        run: mv main.pdf desmond_edem.pdf
+
+      - name: Get Current Date
+        id: date
+        run: echo "date=$(date +%Y-%m-%d)" >> $GITHUB_ENV
+
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: CV Release - (${{ env.date }})
+          body: "Generated CV from the latest commit."
+          files: desmond_edem.pdf
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
